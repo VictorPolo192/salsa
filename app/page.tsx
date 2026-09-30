@@ -116,6 +116,16 @@ export default function Page() {
           </div>
         </div>
       </section>
+      <section className="relative isolate h-[675px] w-screen overflow-hidden bg-[#c5a2e8]" aria-label="Seccion lila">
+        <Image
+          src="/mounsturo.webp"
+          alt="Monstruo"
+          width={600}
+          height={600}
+          className="pointer-events-none absolute bottom-0 right-0 z-20 h-auto max-h-[500px] w-auto max-w-[80vw] -scale-x-100 object-contain"
+          aria-hidden="true"
+        />
+      </section>
     </>
   )
 }
