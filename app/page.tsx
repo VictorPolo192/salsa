@@ -86,8 +86,35 @@ export default function Page() {
           <NavbarDemo />
         </div>
       </main>
-      <section className="h-[600px] w-screen bg-[#ee6055]">
-        <div className="mx-auto h-full w-[1368px] max-w-full bg-[#FFD97D]" />
+      <section className="relative isolate min-h-[675px] w-screen overflow-hidden pt-[75px]">
+        <video
+          src="/caballo.webm"
+          autoPlay
+          loop
+          muted
+          playsInline
+          aria-hidden="true"
+          className="pointer-events-none absolute inset-0 h-full w-full -scale-x-100 object-cover"
+        />
+        <div className="pointer-events-none absolute inset-0 bg-pink-500/40" aria-hidden="true" />
+        <div className="relative z-10 mx-auto grid min-h-[600px] w-[1368px] max-w-full grid-cols-1 md:grid-cols-2">
+          <div className="flex min-h-[300px] items-center justify-center bg-[#d1d5db]/65 p-8 text-left md:min-h-[600px]">
+            <p className="max-w-xl font-serif text-2xl font-bold text-black md:text-4xl">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+          </div>
+          <div className="flex min-h-[300px] items-center justify-center bg-[#22c55e]/65 p-8 md:min-h-[600px]">
+            <video
+              src="/caballo.webm"
+              autoPlay
+              loop
+              muted
+              playsInline
+              controls
+              className="w-full max-w-2xl rounded-[15px] shadow-[0_20px_45px_rgba(236,72,153,0.35)]"
+            />
+          </div>
+        </div>
       </section>
     </>
   )
